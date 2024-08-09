@@ -1,0 +1,48 @@
+<!-- navbar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabflix Navbar</title>
+    <!-- jQuery is required -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+    <!-- Link to the navbar.css file -->
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-brand">
+        <img src="images/popcorn.png" alt="Fabflix Logo" width="50" height="50" class="d-inline-block align-top">
+        <strong style="font-size: 25px;">Fabflix</strong>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link font-weight-bold" style="color: #AC87C5; font-size: 17px;" href="movies.html?top20=true">Top 20</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" style="color: #AC87C5; font-size: 17px;" href="index.html">Browse</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" style="color: #AC87C5; font-size: 17px;" href="#" id="resultHistory">Result</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" style="color: #AC87C5; font-size: 17px;" href="cart.html">Checkout</a></li>
+        </ul>
+        <div class="navbar-search">
+            <form id="search_form"  method="GET" class="form-inline my-2 my-lg-0 ml-auto">
+                <input type="text" name="title" placeholder="Title" id="autocomplete" class="autocomplete-searchbox form-control mr-sm-2 col-sm-2 offset-sm-3" style="border-color: #756AB6;">
+                <input type="number" name="year" placeholder="Year" class="form-control mr-sm-2 col-sm-1" style="border-color: #756AB6;">
+                <input type="text" name="director" placeholder="Director" class="form-control mr-sm-2 col-sm-2" style="border-color: #756AB6;">
+                <input type="text" name="star" placeholder="Star" class="form-control mr-sm-2 col-sm-2" style="border-color: #756AB6;">
+                <button type="submit" class="btn btn-outline-primary my-2 my-sm-0" style="color: #756AB6; border-color: #756AB6;">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<script src="navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+:root {
+    --c1: #FFE5E5;
+    --c2: #E0AED0;
+    --c3: #AC87C5;
+    --c4: #756AB6;
+}
+
+body {
+    background: white;
+    background-size: 300% 100%;
+    font-family: 'Helvetica', sans-serif;
+    min-height: 100vh;
+}
+
+.card {
+    background: rgba(144, 145, 205, 0.3);
+    backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 15px 15px 50px -5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #756AB6;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 1px 1px 1px #393565;
+}
+
+label {
+    color: #756AB6;
+    text-shadow: 0.5px 0.5px rgb(55,55,101);
+}
+
+form input:focus {
+    background: rgba(255,255,255,0.3);
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3);
+    color: #524A7F;
+    text-shadow: 0.5px 0.5px #756AB6;
+}
+
+input[type="submit"] {
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    color: #756AB6;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0.5em;
+    text-shadow: 0.5px 0.5px rgb(55,55,101);
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    background: rgba(255,255,255,0.5);
+}
+
+#payment_error {
+    color: #756AB6;
+    font-size: 1em;
+    text-shadow: 0.5px 0.5px rgba(0,0,0, 0.5);
+    margin-bottom: 10px;
+}
+
+#total-amount {
+    color: #756AB6;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0.5px 0.5px rgb(55,55,101);
+}

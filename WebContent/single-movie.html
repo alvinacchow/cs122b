@@ -1,0 +1,67 @@
+<!-- This example is following frontend and backend separation.
+
+    This .html performs two steps:
+    1. Create a html template skeleton, with all the elements defined (some left empty) and named with ids.
+    2. Load single-star.js to populate the data into empty elements.
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+    />
+    <!-- jQuery is required -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <title>Single Movie</title>
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<div class="container">
+    <h3 id="movie_info"></h3>
+    <table id="movie_info_table" class="table table-striped">
+        <thead>
+        <tr>
+            <th>Director</th>
+            <th>Stars</th>
+            <th>Genres</th>
+            <th>Rating</th>
+            <th>Cart</th>
+        </tr>
+        </thead>
+
+        <tbody id="movie_info_table_body"></tbody>
+    </table>
+</div>
+
+<!-- Load jQuery and Bootstrap JS -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+ otherwise the url is relative to the root path-->
+<script src="single-movie.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>
+

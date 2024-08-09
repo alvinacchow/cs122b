@@ -1,0 +1,112 @@
+body {
+    animation: gradient-animation 10s ease-in-out infinite;
+    animation-direction: alternate;
+    background: linear-gradient(45deg, #f6c8c9 0%, #eeaeca 15%, #cb9fc8 30%, #a28ec6 50%, #9092cd 75%, #8da8dd 90%, #94bbe9 100%);
+    background-size: 300% 100%;
+    font-family: 'Helvetica', sans-serif;
+    min-height: 100vh;
+}
+
+.form-container {
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 35vw;
+    min-width: 350px;
+    max-width: 450px;
+    height: auto;
+}
+
+.form-container #login_error {
+    color: #756AB6;
+    font-size: 1em;
+    text-shadow: 0.5px 0.5px rgba(0,0,0, 0.5);
+}
+
+form {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    box-shadow: 15px 15px 50px -5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 2em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+form h2 {
+    color: #756AB6;
+    font-size: 3em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 1px #393565;
+    margin-bottom: 35px;
+}
+
+form input {
+    backdrop-filter: blur(5px);
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    color: #756AB6;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    text-shadow: 0.5px 0.5px rgb(55,55,101);
+    transition: all 0.3s ease-in-out;
+    width: 275px;
+}
+
+form input::placeholder {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+form input[type="email"]:focus, form input[type="password"]:focus {
+    background: rgba(255,255,255,0.3);
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3);
+    color: #524A7F;
+    text-shadow: 0.5px 0.5px #756AB6;
+}
+
+form input[type="password"] {
+    margin-bottom: -10px;
+}
+
+form input[type="submit"] {
+    width: 200px;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+form input[type="submit"]:active {
+    background: rgba(255,255,255,0.5);
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

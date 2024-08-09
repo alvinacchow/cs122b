@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- jQuery is required -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- include jquery autocomplete JS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Confirmation</title>
+</head>
+
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<div class="container">
+  <h1 id="confirmation-header">Confirmation</h1>
+  <table id=confirmation_table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Sale ID</th>
+      <th>Title</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Total</th>
+    </tr>
+    </thead>
+    <tbody id=confirmation_table_body></tbody>
+  </table>
+
+  <div id="total-sum">
+    Total: $<span id="total-amount">0.00</span>
+  </div>
+</div>
+
+
+
+<!-- Load jQuery and Bootstrap JS -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="confirmation.js"></script>
+<script src="navbar.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,262 @@
+:root {
+    --c1: #FFE5E5;
+    --c2: #E0AED0;
+    --c3: #AC87C5;
+    --c4: #756AB6;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between; /* Add space between elements */
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+.results-heading, #cart-header{
+    margin-right: auto; /* Push "Results" to the left */
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between; /* This will space out the total-sum and checkout-button */
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+#checkout-button {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#total-sum {
+    /* Align with the right border of the table */
+    margin-left: auto; /* This will push the total-sum to the right */
+}
+
+.pageContainer {
+    margin-left: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#numBar label, #numBar select {
+    padding: 0 5px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#numBar label, #sortBar label {
+    color: var(--c3);
+}
+
+.sortContainer {
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#sortBar label, #sortBar select {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.main-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button, .add-to-cart-btn, #checkout-button {
+    background-color: var(--c3);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.metadata-container, .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto; /* Horizontally center the container */
+    padding-top: 10px;
+}
+
+.add_container {
+    width: 80%;
+    margin: 0 auto; /* Center align the container */
+}
+
+#add_form input, #add_form button {
+    margin: 5px; /* Consistent margin around inputs and button */
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+#add_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit-btn {
+    margin-bottom: 10px !important; /* Adds space below the submit button */
+    background-color: var(--c4);
+    color: #FFFFFF;
+}
+
+#clear-btn {
+    background-color: #FFFFFF;
+    color: var(--c4);
+    border: 1px solid var(--c4);
+}
+
+.container {
+    display: flex;
+}
+
+.browse-categories {
+    margin-top: 75px;
+}
+
+.tables-container {
+    text-align: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-header-row {
+    background-color: var(--c4); /* Set the background color */
+    border: none;
+    color: white;
+}
+
+/* Define styles for the header row cells */
+.table-header-row th {
+    padding: 10px; /* Add padding for better spacing */
+    font-weight: bold; /* Make the text bold */
+    border: none;
+}
+
+
+#genre_table,
+#genre_table tbody,
+#genre_table td,
+#genre_table th,
+#alpha_table,
+#alpha_table tbody,
+#alpha_table td,
+#alpha_table th {
+    border: none;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.movie-name, .star-name {
+    padding: 10px;
+    font-style: italic;
+}
+
+thead {
+    background-color: var(--c4);
+}
+
+h1 {
+    color: var(--c4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--c4);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--c4);
+}
+
+thead th {
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+
+th, td {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+a:link {
+    color: var(--c3);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:visited {
+    color: var(--c2);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Aligns the pagination horizontally to the center */
+    margin-top: 20px; /* Adds some space between the pagination and the content above */
+}
+
+.pagination button {
+    margin: 0 5px; /* Adds some space between the buttons */
+    padding: 5px 10px; /* Adds padding to the buttons */
+    background-color: #756AB6; /* Sets background color for the buttons */
+    color: white; /* Sets text color for the buttons */
+    border: none; /* Removes border from the buttons */
+    border-radius: 5px; /* Adds rounded corners to the buttons */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+#currentPage {
+    margin: 0 45px; /* Adds left and right margins to the currentPage span */
+    font-size: 25px;
+    font-weight: bold; /* Makes the text bold */
+    color: var(--c4);
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- jQuery is required -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- include jquery autocomplete JS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="payment.css">
+  <title>Payment Information</title>
+</head>
+
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<div class="card" style="max-width: 60vw; margin: 50px auto 20px auto;">
+  <div id="message" class="card-header"><h2>Enter Payment Information</h2></div>
+  <div class="card-body">
+    <form id="payment_form" method="post" autocomplete="off">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label col-form-label-lg">Card Number</label>
+        <div class="col-sm-10">
+          <input name="card_number" type="text" class="form-control form-control-lg" autocomplete="off" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label col-form-label-lg">Name on Card</label>
+        <div class="col-5">
+          <input name="first_name" type="text" placeholder="First Name" class="form-control form-control-lg" autocomplete="off" required>
+        </div>
+        <div class="col-5">
+          <input name="last_name" type="text"  placeholder="Last Name" class="form-control form-control-lg" autocomplete="off" required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label col-form-label-lg">Expiration Date</label>
+        <div class="col-sm-10">
+          <input name="expiration" type="date" class="form-control form-control-lg" autocomplete="off" required>
+        </div>
+      </div>
+      <div class="text-right">
+        <div id="payment_error"></div>
+      </div>
+    </form>
+  </div>
+  <div class="card-footer d-flex justify-content-between align-items-center">
+    <div class="text-left">
+      <div id="total-amount"></div>
+    </div>
+    <div class="text-right">
+      <input type="submit" value="Place Order" form="payment_form">
+    </div>
+  </div>
+</div>
+
+
+<!-- Load jQuery and Bootstrap JS -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<script src="./payment.js"></script>
+<script src="navbar.js"></script>
+
+</body>
+</html>
